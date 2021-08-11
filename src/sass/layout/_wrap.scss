@@ -1,0 +1,11 @@
+body {
+  color: $black;
+  line-height: 1;
+  font-family: 'Noto Sans KR','돋움',Dotum,Helvetica,'Apple SD Gothic Neo',Sans-serif;
+  background: $white;
+}
+#wrap {
+  position: relative;
+
+  @import "../component/pic";
+}

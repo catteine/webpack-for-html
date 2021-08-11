@@ -1,0 +1,17 @@
+@mixin clearAfter {
+  &:after {
+    clear: both;
+    display: table;
+    content: '';
+  }
+}
+
+@mixin hiddenText {
+  overflow: hidden;
+  font-size: 1px;
+  text-indent: -9999px;
+}
+
+@mixin bgBlank {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAMAAAC67D+PAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRF////AAAAVcLTfgAAAAF0Uk5TAEDm2GYAAAAOSURBVHjaYmCgJwAIMAAAbgABHA/EkAAAAABJRU5ErkJggg==);
+}
