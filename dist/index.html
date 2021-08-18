@@ -4,20 +4,22 @@
 <meta charset="utf-8">
 <title>샘플 페이지</title>
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+<link rel="stylesheet" href="./lib/slick.css">
 <link href="css/index.css" rel="stylesheet"></head>
 <body>
 
   <div id="wrap">
     <div class="pic">
       <picture class="pic_thumb">
-        <source media="(min-width: 800px)" srcset="images/dog_face.jpg?74bb3ef6bb0bf096afcf">
+        <source media="(min-width: 800px)" srcset="./images/dog_face.jpg">
         <img src="images/cat_face.jpg?608d934b9fb934c5071c" alt="profile">
       </picture>
-      <img srcset="images/dog_face.jpg?74bb3ef6bb0bf096afcf 222w, images/cat_face.jpg?608d934b9fb934c5071c 200w"
+      <img srcset="./images/dog_face.jpg 222w, ./images/cat_face.jpg 200w"
            sizes="(min-width: 800px) 222px, 200px"
            src="images/dog_face.jpg?74bb3ef6bb0bf096afcf" alt="">
     </div>
   </div>
   
+<script src="./lib/slick.js"></script>
 <script defer src="index.js"></script></body>
 </html>
