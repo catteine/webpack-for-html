@@ -9,14 +9,15 @@ module.exports = [
   mode: 'none',
   entry: './src/main.js',
   output: {
-    filename: 'index.js',
+    filename: 'js/index.js',
     path: path.resolve(__dirname, 'dist'),
+    // entry: { main: "./src/main.js", library: ["swiper"] },
     assetModuleFilename: 'images/[name][ext]?[hash]'
   },
   devServer: {
     port: 9000,
   },
-	devtool: 'source-map',
+	//devtool: 'source-map',
   module: {
     rules: [
       {
@@ -44,6 +45,9 @@ module.exports = [
           },
           {
             loader: "css-loader",
+          },
+          {
+            loader: "postcss-loader",
           },
           {
             loader: "sass-loader",
