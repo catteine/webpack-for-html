@@ -7,14 +7,29 @@ html용 웹팩 제작하던 것을 새로 내용 갱신, 다음의 내용을 중
 - 외부 라이브러리 파일 관리(옮기는 수준)
 
 ## 폴더
-- src 폴더 : 작업 소스
-- image 폴더 : 이미지 파일
-- sass 폴더 : scss 파일
+- 
+- 
+- 
 - lib : 외부 라이브러리 소스
+- js : 스크립트 파일
 - dist 폴더 : 빌드 결과물
+```
+┌─ src : 작업 소스
+├─ image : 이미지 파일
+├─ sass : scss 파일
+├─ lib : 외부 라이브러리 소스
+├─ js : 스크립트 파일
+└─ dist : 빌드 결과물
+    ├─ image : 이미지 파일
+    ├─ css : css 파일
+    ├─ lib : 외부 라이브러리 소스
+    └─ js : 스크립트 파일
+```
 
 ## .scss
-sass-loader, css-loader로 읽어온 후, mini-css-extract-plugin을 이용해서 css 파일로 빌드
+sass-loader, css-loader로 읽어온 후, mini-css-extract-plugin을 이용해서 css 파일로 빌드.
+
+postcss 기능 중 autoprefixer 활용.
 
 ## .html
 html-webpack-plugin으로 src 폴더 내 html파일을 템플릿 삼아서 빌드
